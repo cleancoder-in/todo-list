@@ -11,8 +11,74 @@
 <script defer src="main.js"></script></head>
 
 <body>
-    <div>Todo list</div>
-    <div>Twitter <i class="fa-brands fa-x-twitter"></i></div>
+    <main class="main-content">
+        <div class="left-panel">
+            <div class="logo">Task Manager</div>
+            <nav class="nav">
+                <div class="home">
+                    <div class="tile inbox">
+                        <i class="fa-solid fa-inbox"></i>
+                        <span>Inbox</span>
+                    </div>
+
+                    <div class="tile today">
+                        <i class="fa-solid fa-calendar-day"></i>
+                        <span>Today</span>
+                    </div>
+
+                    <div class="tile upcoming">
+                        <i class="fa-solid fa-calendar-week"></i>
+                        <span>Upcoming</span>
+                    </div>
+
+                    <div class="tile important">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Important</span>
+                    </div>
+                </div>
+
+                <div class="project-list-container">
+                    <p><span>Projects</span> <span class="addProjectBtn"><i class="fa-solid fa-plus"></i></span> </p>
+                    <ul class="project-list">
+                        <!-- projects to be added by JavaScript -->
+                    </ul>
+
+                </div>
+
+            </nav>
+            <footer>
+                <p>Copyright &copy; cleancoder-in <a href=""><i class="fa-brands fa-github"></i></a></p>
+            </footer>
+        </div>
+
+        <div class="right-panel">
+            <header class="header">
+                <input type="search" name="" id="searchBox" placeholder="search...">
+            </header>
+
+            <div class="task-panel">
+                <div class="title-bar">
+                    <p class="page-title"></p>
+                    <button>Clear Tasks</button>
+                </div>
+
+                <div class="task-list-wrapper">
+                    <ul class="task-list">
+                        <!-- to be added by JavaScript -->
+                    </ul>
+
+                    <button class="addTaskBtn">
+                        <span class="addTaskBtn--icon">+</span> <span class="addTaskBtn--text">Add Task</span>
+                    </button>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
 </body>
 
 </html>
